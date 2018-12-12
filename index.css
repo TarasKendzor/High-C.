@@ -1,0 +1,207 @@
+@font-face {
+font-family: 'Futura Light';
+src: url('FuturaLightC.eot');
+src: url('FuturaLightC.eot?#iefix') format('embedded-opentype'),
+url('FuturaLightC.woff') format('woff'),
+url('FuturaLightC.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Futura Light';
+
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    height:100px;
+    border-bottom: 1px solid black;
+     
+}
+.logo img{
+	width: 82px;
+	height: 52px;
+}
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header a  {
+	text-decoration: none;
+    font-size: 18px;
+    color: #A3A3A3;
+}
+header li{
+	list-style-type: none;
+	padding: 20px;
+}
+.navPartRight ul{
+	padding-right: 40px;
+}
+.carrouselImg{
+	position: relative;
+	background-color: #D4D4D4;
+	border-bottom: 1px solid black;
+}
+
+.carrouselImg span a{
+	position: absolute;
+	top: 50%;
+	left:35%;
+	font-size: 50px ;
+	color: white;
+}
+.accessoryImg{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+.accessoryImg img {
+	
+	width: 49%;
+	height: 60vh;
+	margin: auto;
+	padding: 8px;
+	
+}
+#manOuterwear img{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	margin: auto;	
+	
+}
+
+.man {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	border-top: 1px solid black;
+
+}
+.man img{
+	width: 350px;
+	height: 400px;
+}
+
+.man a:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34%;
+	text-decoration: none;
+	border: 2px solid #D4D4D4;
+	padding: 10px;
+	margin: auto;
+	color: #A3A3A3;
+}
+.branchMan{
+	display: flex;
+	flex-direction: row; 	
+}
+.branchMan div {
+	margin: 20px;
+}
+.title h2{
+	
+    font-size: 25px;
+    color: #A3A3A3;
+}
+.woman {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	border-top: 1px solid black;
+}
+.woman img{
+	width: 350px;
+	height: 400px;
+}
+.branchWoman{
+	display: flex;
+	flex-direction: row; 	
+}
+.branchWoman div{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+.woman a:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34%;
+	text-decoration: none;
+	border: 2px solid #D4D4D4;
+	padding: 10px;
+	margin: auto;
+	color: #A3A3A3;
+}
+.about{
+	background-image: url(img/aboutBackGround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 600px;
+	width: 100%;
+	
+}
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.about h2{
+	margin: 20px 0px;
+	font-size: 24px;
+	color: #525252;
+}
+.about p{
+	width: 40%;
+	font-size: 18px;
+	color: black;
+	line-height: 2;
+	font-weight: 400;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+
+}
+footer li ,a {
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 18px;
+	color: #A3A3A3;
+}
+.footerTop{
+	display: flex;
+	margin: 70px 0px 50px;
+}
+.footerTop li{
+	margin: 25px;
+}
+.footerBottom{
+	display: flex;
+	justify-content: space-between;
+}
+.footerBottom ul{
+	display: flex;
+
+}
+.footerBottom li{
+ margin: 10px 20px;
+}
+.logoFooter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
