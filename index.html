@@ -4,99 +4,276 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<title>project</title>
+		<!-- <link rel="stylesheet" type="text/css" href="font/futura-light/Futura Light.ttf"> -->
+		<title>High C.</title>
 	</head>
 	<body>
 		<header>
-			<div class="chooseGenderNav">
-				<ul>
-					<li id="man"><a href="#">Man</a></li>
-					<li id="woman"><a href="#">Woman</a></li>
+			 <div class="hamburger-menu"> <a href="#"><img src="img/hamburger-logo.png" alt="Hamburger Menu"></a></div>
+			<nav class="choose-gender">
+				<ul class="nav-menu">
+					<li class="man-nav">
+						<a href="#">Man</a>
+						<ul class="nav-sub-man-categories">
+							<li><a href="#">Shirts</a></li>
+							<li> <a href="#">T-Shirts</a></li>
+							<li> <a href="#">Outerwear</a></li>
+						</ul>
+					</li>
+					<li class="woman-nav">
+						<a href="#">Woman</a>
+						<ul class="nav-sub-woman-categories">
+							<li><a href="#">Desses</a></li>
+							<li> <a href="#">T-Shirts</a></li>
+							<li><a href="#">Outerwear</a></li>
+						</ul>
+					</li>
 				</ul>
-			</div>
+			</nav>
 			<div class="logo">
-				<img src="img/logo.gif" alt="pageLogo">
+				<a href="#"><img src="img/logo.gif" alt="Logo Page"></a>
 			</div>
-			<div class="navPartRight">
+			<nav class="part-right">
 				<ul>
 					<li id="about"><a href="#">About</a></li>
 					<li id="cart"><a href="#">Cart</a></li>
 				</ul>
-			</div>
+			</nav>
 		</header>
 		<main>
-			<div class="carrouselImg">
-				 <span> <a href="#"> BASIC COLLECTION</a></span>
-				<a id="manOuterwear" href="#"><img src="img/Souvenir-Jacket_homie_Crop.jpg" alt="manOuterwear"></a>
+			<div class="carrouse-img">
+				<span> <a href="#"> BASIC COLLECTION</a></span>
+				<a id="man-outerwear" href="#"><img src="img/Holiday_Landing.jpg" alt="Man Outerwear clothing"></a>
 			</div>
-			<div class="accessoryImg">
-				<img src="img/mainfoto.jpg" alt="mainphoto">
-				<img src="img/mainfotoone.jpg" alt="mainphoto">
+			<div class="accessory-img">
+				<img src="img/manShirt.jpg" alt="Photo with clothing">
+				<img src="img/mainfotoone.jpg" alt="Photo with clothing">
+				<img src="img/mainfoto.jpg" alt="Photo with clothing">
 			</div>
 			<div class="collection">
 				<div class="man">
-					<div class="title"> <h2>Man</h2></div>
-					<div class="branchMan">
-						<div class="bombers">
-							<a href="#"><img src="img/manBomber.jpg" alt="manBomber"></a>
-							<a href="#"> Bomber</a>
+					<div class="title">
+						<h2>Man</h2>
+					</div>
+					<div class="branch-man">
+						<div class="title-category-m">
+							<a class="title-category" id="shirt"   href="#"> Shirts</a>
+							<a class="title-category" id="t-shirt" href="#"> T-Shirt</a>
+							<a class="title-category" id="outwear" href="#">Outwear</a>
 						</div>
 						<div class="shirt">
-							<a href="#"> <img src="img/manShirt.jpg" alt="shirt"></a>
-							<a href="#"> Shirt</a>
+							<div class="choose-things shirt-m-hide">
+								<div class="shirt-one hover">
+									<a href="#"><img src="img/imgman/man-shirt-blac.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-one-about">Slub Short Sleeve <br>23$</p>
+								</div>
+								<div class="shirt-two hover">
+									<a href="#"><img src="img/imgman/man-shirt-cross-z.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-two-about">Slub Short  Crewneck <br>23$</p>
+								</div>
+								<div class="shirt-three hover">
+									<a href="#"><img src="img/imgman/man-shitr-black.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-three-about">Slub Short  Henley<br>23$</p>
+								</div>
+								<div class="shirt-four hover">
+									<a href="#"><img src="img/imgman/man-shitr-cross.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-four-about">Slub Short Sleeve Crewneck <br>23$</p>
+								</div>
+								<div class="shirt-five hover">
+									<a href="#"><img src="img/imgman/shitr-man-white.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-five-about">Pima Jersey Polo<br>23$</p>
+								</div>
+								<div class="shirt-six hover">
+									<a href="#"><img src="img/imgman/man-shitr-cream.jpg" alt=" Man's shirts"></a>
+									<p class="hover-to" id="shirt-six-about">Pima Jersey Polo<br>23$</p>
+								</div>
+							</div>
 						</div>
-						<div class="tshirt">
-							<a href="#"><img src="img/BASE_WH_2074_Navy_Front.jpg" alt="tshirt"></a>
-							<a href="#">T-Shitr</a>
+						<div class="t-shirt">
+							<div class="choose-things t-shirt-m-hide">
+								<div class="t-shirt-one hover">
+									<a href="#"><img src="img/imgman/man-t-shirt-blue.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-one-about">Slub Short Sleeve <br>27$</p>
+								</div>
+								<div class="t-shirt-two hover">
+									<a href="#"><img src="img/imgman/man-t-shirt-green.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-two-about">Slub Short  Crewneck <br>21$</p>
+								</div>
+								<div class="t-shirt-three hover">
+									<a href="#"><img src="img/imgman/man-t-shitr-brown.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-three-about">Slub Short  Henley<br>32$</p>
+								</div>
+								<div class="t-shirt-four hover">
+									<a href="#"><img src="img/imgman/man-t-shitr-grey.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-four-about">Slub Short Sleeve Crewneck <br>22$</p>
+								</div>
+								<div class="t-shirt-five hover">
+									<a href="#"><img src="img/imgman/man-t-shitr-white.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-five-about">Pima Jersey Polo<br>22$</p>
+								</div>
+								<div class="t-shirt-six hover">
+									<a href="#"><img src="img/man-t-shirt-sport.jpg" alt=" Man's T-shirts"></a>
+									<p class="hover-to" id="t-shirt-six-about">Pima Jersey Polo<br>23$</p>
+								</div>
+							</div>
+						</div>
+						<div class="outwear">
+							<div class="choose-things outwear-m-hide">
+								<div class="one-thing hover">
+									<a id="man-jacket" href="#"><img src="img/imgman/man-jacket.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="man-jacket-about"> Compressed Wool TruckerJacket <br>39$</p>
+								</div>
+								<div class="second-thing hover">
+									<a href="#"><img src="img/imgman/man-bomber.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="second-thing-about">  Black Bomber<br>43$</p>
+								</div>
+								<div class="third-thing hover">
+									<a href="#"><img src="img/imgman/man-coat.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="third-thing-about"> Tech Merino Coat<br>70$</p>
+								</div>
+								<div class="fourth-thing hover">
+									<a href="#"><img src="img/imgman/man-jacket-a.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="fourth-thing-about">Compressed Wool Jacket<br>55$ </p>
+								</div>
+								<div class="fifth-thing hover">
+									<a href="#"><img src="img/imgman/man-pullover.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="fifth-thing-about">Tactical Fleece Pullover<br>43$</p>
+								</div>
+								<div class="six-thing hover">
+									<a href="#"><img src="img/imgman/man-outwear-small.jpg" alt=" Man's Outwears"></a>
+									<p class="hover-to" id="six-thing-about">Tactical Fleece Pullover<br>43$</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="woman">
-					<div class="title"><h2>Woman</h2></div>
-					<div class="branchWoman">
+					<div class="title">
+						<h2>Woman</h2>
+					</div>
+					<div class="branch-woman">
+						<div class="title-category-w">
+							<a class="title-category" id="dress"     href="#"> Dress</a>
+							<a class="title-category" id="w-t-shirt" href="#"> T-Shirt</a>
+							<a class="title-category" id="w-outwear" href="#">Outwear</a>
+						</div>
 						<div class="dress">
-							<a href="#"><img src="img/Wdress.jpg" alt="dress"></a>
-							<a href="#">Dress</a>
+							<div class="choose-things dress-w-hide">
+								<div class="dress-one hover">
+									<a href="#"><img src="img/imgwoman/w-dress-black.jpg" alt=" Woman's dress"></a>
+									<p class="hover-to" id="dress-one-about">Slub Short Sleeve <br>23$</p>
+								</div>
+								<div class="dress-two hover">
+									<a href="#"><img src="img/imgwoman/w-dress-blue.jpg" alt=" Woman's dress"></a>
+									<p class="hover-to" id="dress-two-about">Slub Short  Crewneck <br>23$</p>
+								</div>
+								<div class="dress-three hover">
+									<a href="#"><img src="img/imgwoman/w-dress-green.jpg" alt=" Woman's dress"></a>
+									<p class="hover-to" id="dress-three-about">Slub Short  Henley<br>23$</p>
+								</div>
+								<div class="dress-four hover">
+									<a href="#"><img src="img/imgwoman/w-dress-long.jpg" alt="Woman's dress"></a>
+									<p class="hover-to"  id="dress-four-about">Slub Short Sleeve Crewneck <br>23$</p>
+								</div>
+								<div class="dress-five hover">
+									<a href="#"><img src="img/imgwoman/w-dress-yelloy.jpg" alt=" Woman's dress"></a>
+									<p class="hover-to" id="dress-five-about">Pima Jersey Polo<br>23$</p>
+								</div>
+								<div class="dress-six hover">
+									<a href="#"><img src="img/imgwoman/w-dress-dark.jpg" alt=" Woman's dress"></a>
+									<p class="hover-to" id="dress-six-about">Pima Jersey Polo<br>23$</p>
+								</div>
+							</div>
 						</div>
-						<div class="outerWear">
-							<a href="#"><img src="img/WOuterwear.jpg" alt="outerWear"></a>
-							<a href="#"> Outerwear</a>
+						<div class="w-t-shirt">
+							<div class="choose-things t-shirt-w-hide">
+								<div class="w-t-shirt-one hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-black.jpg" alt=" Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-one-about">Slub Short Sleeve <br>23$</p>
+								</div>
+								<div class="w-t-shirt-two hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-green.jpg" alt=" Man's Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-two-about">Slub Short  Crewneck <br>23$</p>
+								</div>
+								<div class="w-t-shirt-three hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-red.jpg" alt=" Man's Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-three-about">Slub Short  Henley<br>23$</p>
+								</div>
+								<div class="w-t-shirt-four hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-white.jpg" alt=" Man's Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-four-about">Slub Short Sleeve Crewneck <br>23$</p>
+								</div>
+								<div class="w-t-shirt-five hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-zebra.jpg" alt=" Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-five-about">Pima Jersey Polo<br>23$</p>
+								</div>
+								<div class="w-t-shirt-six hover">
+									<a href="#"><img src="img/imgwoman/w-t-shirt-clasic.jpg" alt=" Woman's T-shirts"></a>
+									<p class="hover-to" id="w-t-shirt-six-about">Pima Jersey Polo<br>23$</p>
+								</div>
+							</div>
 						</div>
-						<div class="wTSirt">
-							<a href="#"><img src="img/WTShirt.jpg" alt="wTSirt"></a>
-							<a href="#">T-Shirt</a>
+						<div class="w-outwear">
+							<div class="choose-things outwear-w-hide">
+								<div class="w-one-thing hover">
+									<a id="woman-jacket" href="#"><img src="img/imgwoman/w-outwear-brown.jpg" alt=" Woman's Outwears"></a>
+									<p class="hover-to" id="woman-jacket-about"> Compressed Wool TruckerJacket <br>39$</p>
+								</div>
+								<div class="w-second-thing hover">
+									<a href="#"><img src="img/imgwoman/w-outwear-green.jpg" alt="Woman's Outwears"></a>
+									<p class="hover-to" id="w-second-thing-about">  Black Bomber<br>43$</p>
+								</div>
+								<div class="w-third-thing hover">
+									<a href="#"><img src="img/imgwoman/w-outwear-grey.jpg" alt=" Woman's Outwears"></a>
+									<p class="hover-to" id="w-third-thing-about"> Tech Merino Coat<br>70$</p>
+								</div>
+								<div class="w-fourth-thing hover">
+									<a href="#"><img src="img/imgwoman/w-outwear-white.jpg" alt=" Woman's Outwears"></a>
+									<p class="hover-to" id="w-fourth-thing-about">Compressed Wool Jacket<br>55$ </p>
+								</div>
+								<div class="w-fifth-thing hover">
+									<a href="#"><img src="img/imgwoman/w-outwear-yellou.jpg" alt=" Woman's Outwears"></a>
+									<p class="hover-to" id="w-fifth-thing-about">Tactical Fleece Pullover<br>43$</p>
+								</div>
+								<div class="w-six-thing hover">
+									<a href="#"><img src="img/imgwoman/w-outwear-rain.jpg" alt=" Woman's Outwears"></a>
+									<p class="hover-to" id="w-six-thing-about">Tactical Fleece Pullover<br>43$</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="about">
 				<h2>About</h2>
-				<p>Dual perspectives are essential to high c. We are a designer and a manufacturer, with roots in Ukraine.<br>
-					In 2018, after nearly a decade spent developing fabrics and producing apparel for the Ukraine market, we opened a factory in Lviv, where we make our collections to this day.<br>
-					Our designs balance a modern perspective natural to the Pacific Northwest with an ingrained value of technique, discipline and detail.<br>
-				We combine premium materials with a forward-thinking focus on simplicity and precision, and aim to elevate classic design through a mastery of process.</p>
+				<div class="main-text-about">
+					<p>Dual perspectives are essential to high c. We are a designer and a manufacturer, with roots in Ukraine.
+						In 2018, after nearly a decade spent developing fabrics and producing apparel for the Ukraine market, we opened a factory in Lviv, where we make our collections to this day.
+					</p>
+					<p>Our designs balance a modern perspective natural to the Pacific Northwest with an ingrained value of technique, discipline and detail.</p>
+					<p>We combine premium materials with a forward-thinking focus on simplicity and precision, and aim to elevate classic design through a mastery of process.</p>
+				</div>
 			</div>
 		</main>
 		<footer>
-			<div class="footerTop">
-				<ul class ="footerMenuLeft">
+			<div class="footer-top">
+				<ul class ="footer-menu-left">
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Careers</a></li>
 				</ul>
-				<ul class="footerMenuRight">
+				<ul class="footer-menu-right">
 					<li><a href="#">About</a></li>
 					<li> <a href="#">Service</a></li>
 				</ul>
 			</div>
-			<div class="footerBottom">
-				<ul class="socialMenu">
+			<div class="footer-bottom">
+				<ul class="social-menu">
 					<li><a href="#">Instagram</a></li>
 					<li> <a href="#">Twitter</a></li>
 					<li> <a href="#">Facebook</a></li>
 				</ul>
-				<div class="logoFooter"> <a href="#">2018 HIGH C.</a></div>
-		   </div>
-		
-	</footer>
-</body>
+				<div class="logo-footer"> <a href="#">2018 HIGH C.</a></div>
+			</div>
+		</footer>
+	</body>
 </html>

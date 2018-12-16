@@ -1,207 +1,583 @@
-@font-face {
-font-family: 'Futura Light';
-src: url('FuturaLightC.eot');
-src: url('FuturaLightC.eot?#iefix') format('embedded-opentype'),
-url('FuturaLightC.woff') format('woff'),
-url('FuturaLightC.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-*{
-	box-sizing: border-box;
-	margin: 0;
-	font-family: 'Futura Light';
-
-}
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    height:100px;
-    border-bottom: 1px solid black;
-     
-}
-.logo img{
-	width: 82px;
-	height: 52px;
-}
-header ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-header a  {
-	text-decoration: none;
-    font-size: 18px;
-    color: #A3A3A3;
-}
-header li{
-	list-style-type: none;
-	padding: 20px;
-}
-.navPartRight ul{
-	padding-right: 40px;
-}
-.carrouselImg{
-	position: relative;
-	background-color: #D4D4D4;
-	border-bottom: 1px solid black;
+ @font-face {
+  font-family: 'Futura Light';
+  src: url('FuturaLightC.eot');
+  src: url('FuturaLightC.eot?#iefix') format('embedded-opentype'), url('FuturaLightC.woff') format('woff'), url('FuturaLightC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.carrouselImg span a{
-	position: absolute;
-	top: 50%;
-	left:35%;
-	font-size: 50px ;
-	color: white;
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Futura Light';
+  width: 100%;
+  max-width: 1320px;
 }
-.accessoryImg{
-	display: flex;
-	flex-direction: row;
-	margin: auto;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid black;
+  overflow: visible;
 }
-.accessoryImg img {
-	
-	width: 49%;
-	height: 60vh;
-	margin: auto;
-	padding: 8px;
-	
+.hamburger-menu{
+	display: none;
 }
-#manOuterwear img{
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	margin: auto;	
-	
+.logo img {
+  width: 82px;
+  height: 52px;
+}
+
+.nav-menu,.part-right > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-sub-man-categories {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1;
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+.nav-sub-man-categories a {
+  color: #A3A3A3;
+  padding: 12px 16px;
+  display: block;
+  text-align: center;
+}
+
+.nav-sub-man-categories,.nav-sub-woman-categories {
+  padding: 0px;
+}
+
+.nav-sub-man-categories a:hover {
+  background-color: #ddd;
+}
+
+.man-nav:hover .nav-sub-man-categories {
+  display: block;
+}
+
+.nav-sub-woman-categories {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1;
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+.nav-sub-woman-categories a {
+  color: #A3A3A3;
+  padding: 12px 16px;
+  display: block;
+  text-align: center;
+}
+
+.nav-sub-woman-categories li a :nth-child(1) {
+  color: black;
+}
+
+.nav-sub-woman-categories a:hover {
+  background-color: #ddd;
+}
+
+.woman-nav:hover .nav-sub-woman-categories {
+  display: block;
+}
+
+.nav-sub-man-categories li,.nav-sub-woman-categories li {
+  padding: 0px;
+  margin: 20px auto;
+}
+
+.nav-sub-man-categories li:last-child,.nav-sub-woman-categories li:last-child {
+  margin-bottom: 0px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #A3A3A3;
+}
+
+header li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.part-right ul {
+  padding-right: 40px;
+}
+
+.carrouse-img {
+  position: relative;
+  background-color: #D4D4D4;
+  border-bottom: 1px solid black;
+  z-index: 0;
+  width: 100%;
+}
+
+.carrouse-img span a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 50px;
+  color: white;
+  z-index: 2;
+}
+
+.accessory-img {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+}
+
+.accessory-img img {
+  width: 32%;
+  height: 60vh;
+  margin: auto;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+#man-outerwear img {
+  height: calc(100vh - 91px);
+  width: 100%;
+  display: flex;
+  margin: auto;
 }
 
 .man {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 40px;
-	border-top: 1px solid black;
-
-}
-.man img{
-	width: 350px;
-	height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
 }
 
-.man a:nth-child(2) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 34%;
-	text-decoration: none;
-	border: 2px solid #D4D4D4;
-	padding: 10px;
-	margin: auto;
-	color: #A3A3A3;
+.branch-man {
+  display: flex;
+  flex-direction: column;
 }
-.branchMan{
-	display: flex;
-	flex-direction: row; 	
+
+.branch-man div {
+  margin: 20px;
 }
-.branchMan div {
-	margin: 20px;
+
+.branch-man img {
+  height: 350px;
+  width: 300px;
 }
-.title h2{
-	
-    font-size: 25px;
-    color: #A3A3A3;
+
+.title-category-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.title-category-m a {
+  margin: 20px 30px;
+  font-size: 24px;
+}
+
+.shirt-m-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+}
+
+.t-shirt-m-hide {
+  display: none;
+	/*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+}
+
+.outwear-m-hide {
+  display: none;
+	/*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+}
+
+.branch-woman {
+  display: flex;
+  flex-direction: column;
+}
+
+.branch-woman img {
+  height: 350px;
+  width: 300px;
+  padding: 5px;
+  padding-bottom: 30px;
+}
+
+.title-category-w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-category-w a {
+  margin: 20px 30px;
+  font-size: 24px;
+}
+
+.dress-w-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+  padding-bottom: 30px;
+}
+
+.t-shirt-w-hide {
+  display: none;
+	/*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+  padding-bottom: 30px;
+}
+
+.outwear-w-hide {
+  display: none;
+	/*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #A3A3A3;
+  padding-bottom: 30px;
+}
+
+.hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hover-to {
+  display: none;
+  position: absolute;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 22px 0px 0px 0px;
+  text-align: center;
+  background-color: inherit;
+  color: #A3A3A3;
+  padding: 0px;
+}
+
+.hover:hover .hover-to {
+  display: block;
+}
+
+.title h2 {
+  font-size: 25px;
+  color: #A3A3A3;
+  margin-bottom: 20px;
+}
+
 .woman {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 40px;
-	border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
 }
-.woman img{
-	width: 350px;
-	height: 400px;
-}
-.branchWoman{
-	display: flex;
-	flex-direction: row; 	
-}
-.branchWoman div{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-}
-.woman a:nth-child(2) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 34%;
-	text-decoration: none;
-	border: 2px solid #D4D4D4;
-	padding: 10px;
-	margin: auto;
-	color: #A3A3A3;
-}
-.about{
-	background-image: url(img/aboutBackGround.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	height: 600px;
-	width: 100%;
-	
-}
-.about{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.about h2{
-	margin: 20px 0px;
-	font-size: 24px;
-	color: #525252;
-}
-.about p{
-	width: 40%;
-	font-size: 18px;
-	color: black;
-	line-height: 2;
-	font-weight: 400;
-}
-footer{
-	display: flex;
-	flex-direction: column;
 
+#dress ,#w-t-shirt ,#w-outwear ,#outwear ,#t-shirt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.about {
+  background-image: url(img/aboutBackGround.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about h2 {
+  margin: 10px 0px;
+  font-size: 24px;
+  color: #F3FCF2;
+}
+
+.main-text-about {
+  width: 60%;
+  font-size: 20px;
+  color: #F3FCF2;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 20px auto 50px ;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+}
+
+footer li ,a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #A3A3A3;
+}
+
+.footer-top {
+  display: flex;
+  margin: 50px 0px 70px;
+}
+
+.footer-top li {
+  margin: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.footer-bottom ul {
+  display: flex;
+}
+
+.footer-bottom li {
+  margin: 0px 20px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+ .logo img {
+  width: 62px;
+  height: 42px;
+}
+ .carrouse-img span a{
+ 	font-size: 25px;
+ }
+ .collection img {
+ 	height: 200px;
+ 	width: 150px;
+ }
+ .title h2{
+ 	font-size: 20px;
+ }
+ .title-category{
+ 	font-size: 10px;
+ }
+ 
+  #shirt,#dress ,#w-t-shirt ,#w-outwear ,#outwear ,#t-shirt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+ .about h2{
+ 	font-size: 16px;
+ }
+
+}
+
+@media screen and (max-width: 420px){
+
+	nav li a{
+		font-size: 12px;
+	}
+	.logo img {
+      width: 42px;
+      height: 32px;
+      margin-left: 12px;
+    }
+    header{
+      height: 60px;
+    }
+    .nav-menu{
+    	padding-left: 0px;
+    }
+    .part-right ul {
+    padding-right: 10px;
+}
+    #man-outerwear img {
+     height: calc(100vh - 61px);
+    }
+    .accessory-img img {
+  width: 30%;
+  height: 40vh;
+  margin: 5px;
+  padding: 1px; 
+   }
+   .about h2 {
+  margin: 10px 0px;
+  font-size: 18px;
+  color: black;
+  
+}
+.main-text-about {
+  width: 60%;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+  font-weight: 400;
+  
 }
 footer li ,a {
-	list-style-type: none;
-	text-decoration: none;
-	font-size: 18px;
-	color: #A3A3A3;
+  
+  font-size: 12px;
+  color: #A3A3A3;
 }
-.footerTop{
+.footer-bottom{
 	display: flex;
-	margin: 70px 0px 50px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	
 }
-.footerTop li{
-	margin: 25px;
-}
-.footerBottom{
-	display: flex;
-	justify-content: space-between;
-}
-.footerBottom ul{
-	display: flex;
+.logo-footer{
+	margin-top: 30px;
+	margin-left: 170px;
+
 
 }
-.footerBottom li{
- margin: 10px 20px;
+@media screen and (max-width: 320px){
+	header{
+		height: 40px;
+	}
+	#man-outerwear img {
+     height: calc(100vh - 41px);
+    }
+	.logo img {
+  width: 32px;
+  height: 22px;
+  
+   margin-top: 7px;
+
 }
-.logoFooter{
-	display: flex;
-	align-items: center;
+
+.nav-menu{
+	display: none;
+}
+#about{
+	display: none;
+}
+#cart  {
+	margin-top: 5px;
+	
+}
+header li{
+	padding: 0px;
+
+}
+#cart a{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.hamburger-menu {
+	display:flex;
 	justify-content: center;
+	align-items: center;
+   
+
+
+}
+.hamburger-menu img{
+	width: 25px;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 20px;
+
+}
+ .title h2{
+ 	font-size: 12px;
+ 	margin:0 6px 0 0;
+ }
+  #shirt,#dress ,#w-t-shirt ,#w-outwear ,#outwear ,#t-shirt {
+
+  font-size: 10px;
+  margin: 0 auto;
+}
+.title-category-m{
+	 margin:  auto;
+}
+.branch-man div{
+	margin:5px ;
+}
+.title-category-w{
+	margin: 5px;
+}
+.branch-woman div{
+	margin:5px ;
+}
+.collection img{
+	width: 100px;
+	height: 150px;
+	margin: 2px;
+	padding-bottom: 10px;
+}
+.hover-to {
+  
+  font-weight: 600;
+  font-size: 12px;
+  margin: 12px 0px 0px 0px;
+  
+}
+footer{
+	height: 20vh;
+}
+footer li ,a {
+  font-size: 10px;
+  
+}
+.footer-top{
+	margin-top: 10px;
+}
+.footer-bottom{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	
+}
+.logo-footer{
+	margin-top: 30px;
+	margin-left: 120px;
+
+
 }
