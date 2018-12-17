@@ -6,12 +6,16 @@
   font-style: normal;
 }
 
+
 body {
   box-sizing: border-box;
   margin: 0 auto;
   font-family: 'Futura Light';
   width: 100%;
-  max-width: 1320px;
+  max-width: 1200px;
+  -webkit-box-shadow: -1px 3px 28px 6px rgba(143,137,143,1);
+  -moz-box-shadow: -1px 3px 28px 6px rgba(143,137,143,1);
+  box-shadow: -1px 3px 28px 6px rgba(143,137,143,1);
 }
 
 header {
@@ -21,6 +25,9 @@ header {
   height: 90px;
   border-bottom: 1px solid black;
   overflow: visible;
+}
+body a:hover{
+  color: #292929;
 }
 .hamburger-menu{
 	display: none;
@@ -221,6 +228,9 @@ header li {
   display: flex;
   flex-direction: column;
 }
+.branch-woman div{
+  margin:20px;
+}
 
 .branch-woman img {
   height: 350px;
@@ -344,7 +354,7 @@ header li {
 footer {
   display: flex;
   flex-direction: column;
-  height: 35vh;
+  height: 250px;
 }
 
 footer li ,a {
@@ -383,6 +393,7 @@ footer li ,a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -413,6 +424,13 @@ footer li ,a {
  .about h2{
  	font-size: 16px;
  }
+ footer{
+  height: 190px;
+ }
+ .footer-top {
+  display: flex;
+  margin: 5px 0px 70px;
+}   
 
 }
 
@@ -458,10 +476,17 @@ footer li ,a {
   font-weight: 400;
   
 }
+footer{
+  height: 180px;
+}
 footer li ,a {
   
   font-size: 12px;
   color: #A3A3A3;
+}
+.footer-top {
+  display: flex;
+  margin: 5px 0px 70px;
 }
 .footer-bottom{
 	display: flex;
@@ -559,24 +584,25 @@ header li{
   
 }
 footer{
-	height: 20vh;
+	height: 160px;
 }
 footer li ,a {
   font-size: 10px;
   
 }
 .footer-top{
-	margin-top: 10px;
+	margin-top: 0px;
 }
 .footer-bottom{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
+  margin: 5px;
 	
 }
 .logo-footer{
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 120px;
 
 
