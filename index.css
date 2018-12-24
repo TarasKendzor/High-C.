@@ -285,6 +285,7 @@ header li {
 .title-category-w a {
   margin: 20px 30px;
   font-size: 24px;
+  padding: 5px;
 }
 
 .dress-w-hide {
@@ -297,8 +298,7 @@ header li {
 }
 
 .t-shirt-w-hide {
-  display: none;
-	/*display: flex;*/
+	display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -307,8 +307,8 @@ header li {
 }
 
 .outwear-w-hide {
-  display: none;
-	/*display: flex;*/
+
+	display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
