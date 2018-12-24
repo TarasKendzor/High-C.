@@ -261,6 +261,9 @@ header li {
   flex-wrap: wrap;
   border: 1px solid #A3A3A3;
 }
+#shirt{
+  border: 2px solid #A3A3A3;
+}
 #t-shirt-content-m,#outwear-content-m{
   display: none;
 }
@@ -316,6 +319,9 @@ header li {
   flex-wrap: wrap;
   border: 1px solid #A3A3A3;
   padding-bottom: 30px;
+}
+#dress{
+  border: 2px solid #A3A3A3;
 }
 #w-t-shirt-content,#w-outwear-content{
   display: none;
