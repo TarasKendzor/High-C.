@@ -5,7 +5,49 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.title-category {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  animation-duration: 4s;
+}
 
 body {
   box-sizing: border-box;
@@ -126,18 +168,19 @@ header li {
 }
 
 .carrouse-img {
-  position: relative;
-  background-color: #D4D4D4;
+   background-image: url(img/Holiday_Landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 91px);
   border-bottom: 1px solid black;
   z-index: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carrouse-img span a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
   font-size: 50px;
   color: white;
   z-index: 2;
@@ -158,12 +201,7 @@ header li {
   padding-top: 10px;
 }
 
-#man-outerwear img {
-  height: calc(100vh - 91px);
-  width: 100%;
-  display: flex;
-  margin: auto;
-}
+
 
 .man {
   display: flex;
@@ -196,6 +234,7 @@ header li {
 .title-category-m a {
   margin: 20px 30px;
   font-size: 24px;
+  padding: 5px;
 }
 
 .shirt-m-hide {
@@ -207,8 +246,7 @@ header li {
 }
 
 .t-shirt-m-hide {
-  display: none;
-	/*display: flex;*/
+ 	display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -216,8 +254,7 @@ header li {
 }
 
 .outwear-m-hide {
-  display: none;
-	/*display: flex;*/
+	display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
