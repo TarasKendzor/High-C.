@@ -169,6 +169,7 @@ header li {
 
 .carrouse-img {
    background-image: url(img/Holiday_Landing.jpg);
+    background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 91px);
@@ -260,7 +261,9 @@ header li {
   flex-wrap: wrap;
   border: 1px solid #A3A3A3;
 }
-
+#t-shirt-content-m,#outwear-content-m{
+  display: none;
+}
 .branch-woman {
   display: flex;
   flex-direction: column;
@@ -307,13 +310,15 @@ header li {
 }
 
 .outwear-w-hide {
-
 	display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border: 1px solid #A3A3A3;
   padding-bottom: 30px;
+}
+#w-t-shirt-content,#w-outwear-content{
+  display: none;
 }
 
 .hover {
