@@ -559,12 +559,6 @@ align-items: center;
  	height: 200px;
  	width: 150px;
  }
- .accessory-img img{
-  width: 29%;
-  padding: 2px 1px;
-  margin:  2px auto;
-
- }
  .title h2{
  	font-size: 20px;
  }
