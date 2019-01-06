@@ -33,6 +33,13 @@ html{
   -moz-box-shadow: -1px 3px 28px 6px rgba(143,137,143,1);
   box-shadow: -1px 3px 28px 6px rgba(143,137,143,1);
 }
+.popup-items img{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 .add-button a{
 display: block;
 position: absolute;

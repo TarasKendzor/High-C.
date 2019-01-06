@@ -65,10 +65,12 @@ $('#exit-cross-popup').click(function(){
     $('.popup-items').show();
     $('html').addClass('body-overlay');
     // $('.pop img').attr('src') = $(this).find('img').src();
-    // $('.pop p').text() = $(this).parents('a').siblings('p').text();
+    // $('.pop-items p').text() = $(this).parents('a').siblings('p').text();
    var newSrc = $(this).find('img').attr('src');
-   $('.pop img').attr('src', newSrc);
-  })
+   $('.popup-items .new-photo img').attr('src', newSrc);
+  //  var newText = $(this).find('p').attr('text()');
+  //  $('.popop-items .new-text p').attr('text()', newText);
+  // })
 });
   $('#exit-cross-popup-items').click(function(){
   $('.popup-items').hide();
