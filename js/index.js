@@ -74,6 +74,28 @@ $('#exit-cross-popup').click(function(){
   $('.popup-items').hide();
   $('html').removeClass('body-overlay');
 });
+  $('#nav-man-shitrs').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#shirt-content-m').offset().top
+        }, 1000);
+        $('#shirt-content-m').fadeIn(200);
+        $('#t-shirt-content-m , #outwear-content-m').fadeOut(200);
+    });
+  $('#nav-man-t-shitrs').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#t-shirt-content-m').offset().top
+        }, 1000);
+        $('#t-shirt-content-m').fadeIn(200);
+        $('#shirt-content-m , #outwear-content-m').fadeOut(200);
+    });
+  $('#nav-man-outerwear').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#outwear-content-m').offset().top
+        }, 1000);
+        $('#outwear-content-m').fadeIn(200);
+        $('#t-shirt-content-m , #shirt-content-m').fadeOut(200);
+    });
+  
 $('#contact-show').click(function(){
   $('#contact').show();
 })
