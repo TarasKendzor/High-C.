@@ -40,6 +40,13 @@ html{
   align-items: center;
   margin: 0 auto;
 }
+.popup-items p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  color: #A3A3A3;
+}
 .add-button a{
 display: block;
 position: absolute;
@@ -53,7 +60,7 @@ font-weight: 600;
 #exit-cross-popup-items{
   position:absolute;
   top: -4%;
-  right: 2%;
+  right: 1%;
   height: 30px;
   width: 30px;
 }
@@ -359,9 +366,7 @@ header li {
   border: 1px solid #A3A3A3;
   padding-bottom: 30px;
 }
-/*#dress{
-  outline: 2px solid #A3A3A3;
-}*/
+
 #w-t-shirt-content,#w-outwear-content{
   display: none;
 }
@@ -581,7 +586,7 @@ align-items: center;
  .footer-top {
   display: flex;
   margin: 5px 0px 70px;
-}   
+  }   
 
 }
 

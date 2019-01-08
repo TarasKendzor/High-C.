@@ -64,11 +64,11 @@ $('#exit-cross-popup').click(function(){
     $(this).each(function(){
     $('.popup-items').show();
     $('html').addClass('body-overlay');
-    // $('.pop img').attr('src') = $(this).find('img').src();
-    // $('.pop p').text() = $(this).parents('a').siblings('p').text();
    var newSrc = $(this).find('img').attr('src');
    $('.popup-items .new-photo img').attr('src', newSrc);
   })
+    var newText = $(this).find('p').text();
+    $('.popup-items .new-text p').text(newText);
 });
   $('#exit-cross-popup-items').click(function(){
   $('.popup-items').hide();
