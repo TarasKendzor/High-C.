@@ -134,14 +134,35 @@ $('#exit-cross-popup').click(function(){
         $('#dress, #w-t-shirt').css('outline', 'none');
         $('#w-outwear').css('outline', '2px solid #A3A3A3');
     });
+  $('.about-nav').on('click' , function(e){
+    e.preventDefault()
+    $('html, body').animate({
+            scrollTop: $('.main-text-about').offset().top
+        }, 500);
+  });
  
 $('#contact-show').click(function(){
   $('#contact').show();
+  $('html, body').animate({
+            scrollTop: $('#contact').offset().top
+        }, 500);
 })
 $('#service-show').click(function(){
   $('#service').show();
+  $('html, body').animate({
+            scrollTop: $('#service').offset().top
+        }, 500);
 })
 $('#carrers-show').click(function(){
   $('#careers').show();
+  $('html, body').animate({
+            scrollTop: $('#careers').offset().top
+        }, 500);
+})
+$('#footer-logo-link').click(function(e){
+  e.preventDefault();
+  $('html, body').animate({
+            scrollTop: $('.nav-menu').offset().top
+        }, 500);
 })
 });
