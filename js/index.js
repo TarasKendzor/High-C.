@@ -74,28 +74,67 @@ $('#exit-cross-popup').click(function(){
   $('.popup-items').hide();
   $('html').removeClass('body-overlay');
 });
-  $('#nav-man-shitrs').on('click', function () {
+  $('#nav-man-shitrs').on('click', function (e) {
+    e.preventDefault();
+        $('#shirt-content-m').show();
+        $('#t-shirt-content-m , #outwear-content-m').hide();
         $('html, body').animate({
-            scrollTop: $('#shirt-content-m').offset().top
-        }, 1000);
-        $('#shirt-content-m').fadeIn(200);
-        $('#t-shirt-content-m , #outwear-content-m').fadeOut(200);
+            scrollTop: $('.title-category-m').offset().top
+        }, 500);
+        $('#outwear, #t-shirt').css('outline', 'none');
+        $('#shirt').css('outline', '2px solid #A3A3A3');
     });
-  $('#nav-man-t-shitrs').on('click', function () {
+  $('#nav-man-t-shitrs').on('click', function (e) {
+    e.preventDefault();
+        $('#t-shirt-content-m').show();
+        $('#shirt-content-m , #outwear-content-m').hide();
         $('html, body').animate({
-            scrollTop: $('#t-shirt-content-m').offset().top
-        }, 1000);
-        $('#t-shirt-content-m').fadeIn(200);
-        $('#shirt-content-m , #outwear-content-m').fadeOut(200);
+            scrollTop: $('.title-category-m').offset().top
+        }, 500);
+        $('#outwear, #shirt').css('outline', 'none');
+        $('#t-shirt').css('outline', '2px solid #A3A3A3');
     });
-  $('#nav-man-outerwear').on('click', function () {
+  $('#nav-man-outerwear').on('click', function (e) {
+    e.preventDefault();
+        $('#outwear-content-m').show();
+        $('#t-shirt-content-m , #shirt-content-m').hide();
         $('html, body').animate({
-            scrollTop: $('#outwear-content-m').offset().top
-        }, 1000);
-        $('#outwear-content-m').fadeIn(200);
-        $('#t-shirt-content-m , #shirt-content-m').fadeOut(200);
+            scrollTop: $('.title-category-m').offset().top
+        }, 500);
+        $('#shirt, #t-shirt').css('outline', 'none');
+        $('#outwear').css('outline', '2px solid #A3A3A3');
     });
-  
+  $('#nav-w-dress').on('click', function (e) {
+    e.preventDefault();
+        $('#dress-content').show();
+        $('#w-t-shirt-content , #w-outwear-content').hide();
+        $('html, body').animate({
+            scrollTop: $('.title-category-w').offset().top
+        }, 500);
+        $('#w-outwear, #w-t-shirt').css('outline', 'none');
+        $('#dress').css('outline', '2px solid #A3A3A3');
+    });
+  $('#nav-w-t-shirt').on('click', function (e) {
+    e.preventDefault();
+        $('#w-t-shirt-content').show();
+        $('#dress-content , #w-outwear-content').hide();
+        $('html, body').animate({
+            scrollTop: $('.title-category-w').offset().top
+        }, 500);
+        $('#dress, #w-outwear').css('outline', 'none');
+        $('#w-t-shirt').css('outline', '2px solid #A3A3A3');
+    });
+  $('#nav-w-outerwear').on('click', function (e) {
+    e.preventDefault();
+        $('#w-outwear-content').show();
+        $('#dress-content , #w-t-shirt-content ').hide();
+        $('html, body').animate({
+            scrollTop: $('.title-category-w').offset().top
+        }, 500);
+        $('#dress, #w-t-shirt').css('outline', 'none');
+        $('#w-outwear').css('outline', '2px solid #A3A3A3');
+    });
+ 
 $('#contact-show').click(function(){
   $('#contact').show();
 })
